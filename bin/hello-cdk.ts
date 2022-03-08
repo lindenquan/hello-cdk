@@ -1,10 +1,8 @@
-#!/usr/bin/env node
-import 'source-map-support/register';
-import * as cdk from 'aws-cdk-lib';
-import { HelloCdkStack } from '../lib/hello-cdk-stack';
+import 'source-map-support/register'
+import * as cdk from 'aws-cdk-lib'
+import { HelloCdkStack } from '../lib/hello-cdk-stack'
 
-const app = new cdk.App();
+const app = new cdk.App()
 new HelloCdkStack(app, 'HelloCdkStack', {
-  env: { region: 'us-west-2' },
-
-});
+  env: { region: 'us-west-2' }
+})
